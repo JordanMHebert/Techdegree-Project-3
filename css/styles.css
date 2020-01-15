@@ -1,0 +1,188 @@
+/*=======================================
+         base styles
+======================================== */
+* {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  line-height: 1.6;
+  text-align: center;
+}
+}
+
+/*=======================================
+          main css
+ ======================================== */
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+form {
+  max-width: 300px;
+  margin: 10px auto;
+  padding-top: 0;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #2D3945;
+  font-size: 1.5em;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1em;
+}
+
+p {
+  color: #778899;
+  font-size: 1em;
+}
+
+.get-started {
+  margin-bottom: 20px;
+}
+
+.line1 {
+  height: 1px;
+  border-bottom: 4px solid black;
+  margin-bottom: 4px;
+}
+
+.line2 {
+  height: 1px;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+}
+
+​ legend {
+  font-weight: bold;
+}
+
+label {
+  text-align: left;
+  margin-top: 5px;
+  display: block;
+  margin-bottom: 3px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.contact-info {
+  color: #d3d3d3;
+}
+
+.state-choice {
+  color: #2f4f4f;
+}
+
+input {
+  color: #2f4f4f;
+  background-color: #EFF0F2;
+}
+
+::placeholder {
+  color: #d3d3d3;
+  text-align: right;
+  font-size: .8em;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+/* input, */
+input[type="text"],
+input[type="email"],
+input[type="address"],
+input[type="city"],
+input[type="zip"] {
+  display: flex;
+  border-radius: 3.5px;
+  height: 35px;
+}
+
+input[type="zip"] {
+  max-width: 40%;
+}
+
+select[id="state"] {
+  display: flex;
+  border-radius: 3.5px;
+  height: 35px;
+  background-color: #EFF0F2;
+  justify-content: flex-start;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+legend {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/*=======================================
+         flexbox css
+======================================== */
+/*=======================================
+            media queries
+ ======================================== */
+@media (min-width:768px) {}
