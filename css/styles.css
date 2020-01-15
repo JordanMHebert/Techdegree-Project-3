@@ -1,10 +1,6 @@
 /*=======================================
          base styles
 ======================================== */
-* {
-  box-sizing: border-box;
-}
-
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -12,7 +8,7 @@
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Noto Sans', 'Roboto Condensed', sans-serif;
   line-height: 1.6;
   text-align: center;
 }
@@ -21,10 +17,6 @@ body {
 /*=======================================
           main css
  ======================================== */
-body {
-  font-family: 'Nunito', sans-serif;
-}
-
 form {
   max-width: 300px;
   margin: 10px auto;
@@ -32,10 +24,16 @@ form {
   border-radius: 8px;
 }
 
+fieldset {
+  border: none;
+}
+
+/*=======================================
+        top section of form
+ ======================================== */
 h1 {
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
   background: #2D3945;
   font-size: 1.5em;
   color: white;
@@ -53,7 +51,13 @@ p {
 }
 
 .get-started {
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.main-heading {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background-color: #b0e0e6;
 }
 
 .line1 {
@@ -68,6 +72,9 @@ p {
   margin-bottom: 20px;
 }
 
+/*=======================================
+   contact information section of form
+ ======================================== */
 ​ legend {
   font-weight: bold;
 }
@@ -77,11 +84,6 @@ label {
   margin-top: 5px;
   display: block;
   margin-bottom: 3px;
-}
-
-label.light {
-  font-weight: 300;
-  display: inline;
 }
 
 .contact-info {
@@ -105,72 +107,34 @@ input {
   font-style: italic;
 }
 
+.contact {
+  display: flex;
+}
+
 /* input, */
 input[type="text"],
 input[type="email"],
+input[type="phone"],
 input[type="address"],
 input[type="city"],
 input[type="zip"] {
-  display: flex;
+  flex-basis: 100%;
   border-radius: 3.5px;
-  height: 35px;
+  height: 40px;
+  margin-bottom: 5px;
 }
 
 input[type="zip"] {
-  max-width: 40%;
+  max-width: 36%;
+  display: flex;
 }
 
 select[id="state"] {
-  display: flex;
+  flex-basis: 100%;
   border-radius: 3.5px;
-  height: 35px;
+  height: 40px;
   background-color: #EFF0F2;
-  justify-content: flex-start;
-}
-
-input[type="radio"],
-input[type="checkbox"] {
-  margin: 0 4px 8px 0;
-}
-
-select {
-  padding: 6px;
-  height: 32px;
-  border-radius: 2px;
-}
-
-button {
-  padding: 19px 39px 18px 39px;
-  color: #FFF;
-  background-color: #4bc970;
-  font-size: 18px;
-  text-align: center;
-  font-style: normal;
-  border-radius: 5px;
-  width: 100%;
-  border: 1px solid #3ac162;
-  border-width: 1px 1px 3px;
-  box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
-  margin-bottom: 10px;
-}
-
-fieldset {
-  margin-bottom: 30px;
-  border: none;
-}
-
-.number {
-  background-color: #5fcf80;
-  color: #fff;
-  height: 30px;
-  width: 30px;
-  display: inline-block;
-  font-size: 0.8em;
-  margin-right: 4px;
-  line-height: 30px;
-  text-align: center;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  border-radius: 100%;
+  margin-bottom: 5px;
 }
 
 legend {
@@ -180,8 +144,87 @@ legend {
 }
 
 /*=======================================
-         flexbox css
-======================================== */
+   newsletter section of form
+ ======================================== */
+.second-section {
+  padding-top: 10px;
+  background-color: #e0ffff;
+  padding-bottom: 5px;
+}
+
+.line3 {
+  height: 1px;
+  border-bottom: 2px solid black;
+  margin-bottom: 2px;
+}
+
+.recieve {
+  text-align: left;
+}
+
+label[for="newsletter"] {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+label[for="format"],
+label[for="other-topics"] {
+  color: #778899;
+  font-size: 1em;
+  padding-bottom: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.html-newsletter,
+.css-newsletter,
+.javascipt-newsletter,
+.html-radio,
+.plain-text-radio {
+  flex-basis: 90%;
+  margin-top: -5px;
+  margin-left: 12px;
+  color: #778899;
+}
+
+.typehere {
+  display: flex;
+}
+
+textarea {
+  flex-basis: 100%;
+  border-radius: 3px;
+  height: 6.25em;
+  background-color: #EFF0F2;
+}
+
+/*=======================================
+    sign up button at bottom of form
+ ======================================== */
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4EBBB5;
+  font-size: 1.125em;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 96%;
+  margin-bottom: 5px;
+}
+
+/*=======================================
+    footer section of the form
+ ======================================== */
+.copyright {
+  font-family: 'Gayathri', sans-serif;
+  margin-top: 1;
+  font-size: .90em;
+}
+
 /*=======================================
             media queries
  ======================================== */
