@@ -326,8 +326,12 @@ input[type="radio"] {
   margin-left: 165px;
 }
 
-.other-topics {
-  margin-left: 180px;
+.bottom-news {
+  margin-left: 155px;
+}
+
+.bottom-topics{
+text-align: center;
 }
 
 textarea {
