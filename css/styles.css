@@ -111,6 +111,7 @@ input {
   display: flex;
 }
 
+
 input[type="text"],
 input[type="email"],
 input[type="tel"] {
@@ -285,6 +286,11 @@ form {
   display: flex;
 }
 
+.contact-spans {
+flex-grow: 1;
+}
+
+
 form input, form select {
     max-width: 100%;
     display: inline-block;
@@ -303,6 +309,7 @@ form input, form select {
   margin-bottom: 10px;
   max-width: 50%;
   margin-left: 180px;
+  margin-top: 10px;
 }
 
 .second-section {
@@ -317,30 +324,33 @@ input[type="radio"] {
 }
 
 .legend2 {
-  margin-left: 165px;
+  text-align: left;
+  margin-left: 180px;
   font-size: 1.2em;
 }
 
 .recieve,
 .format {
-  margin-left: 165px;
-}
-
-.bottom-news {
-  margin-left: 155px;
-}
-
-.bottom-topics{
-text-align: center;
-}
-
-textarea {
-  max-width: 51.5%;
   margin-left: 180px;
 }
 
+.bottom-news {
+  margin-left: 180px;
+  text-align: left;
+}
+
+.bottom-topics{
+text-align: left;
+margin-left: 180px;
+}
+
+textarea {
+  max-width: 55%;
+  margin-left: 170px;
+}
+
 button {
-  max-width: 50%;
+  max-width: 53%;
 }
 
 
