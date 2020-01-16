@@ -296,7 +296,13 @@ button {
     display: inline-block;
   }
 
-  form label {
+  label[for="name"],
+  label[for="mail"],
+  label[for="phone"],
+  label[for="address"],
+  label[for="city"],
+  label[for="state"],
+  label[for="zip"] {
     width: 40%;
   }
 
