@@ -34,38 +34,33 @@
 
 		<!--fieldset for contact info section of the page  -->
 		<fieldset>
-			<legend><span class="legend">Contact Information</span></legend>
+			<legend><span class="legend topone">Contact Information</span></legend>
 
 			<div class="contact-info">
 
-				<div class="contact">
+
 					<label for="name">Full Name</label>
-					<span class="contact-spans"><input type="text" id="name" name="user_name" placeholder="Required" required></span>
-				</div>
+					<input type="text" id="name" name="user_name" placeholder="Required" required>
 
-				<div class="contact">
+
+
 					<label for="mail">Email Address</label>
-					<span class="contact-spans"><input type="email" id="mail" name="user_email" placeholder="Required" required></span>
-				</div>
+					<input type="email" id="mail" name="user_email" placeholder="Required" required>
 
-				<div class="contact">
+
 					<label for="phone">Phone Number</label>
-					<span class="contact-spans"><input type="tel" id="phone" name="user_phone"></span>
-				</div>
+					<input type="tel" id="phone" name="user_phone">
 
-				<div class="contact">
 					<label for="address">Street Address</label>
-					<span class="contact-spans"><input type="text" id="address" name="user_address"></span>
-				</div>
+					<input type="text" id="address" name="user_address">
 
-				<div class="contact">
+
 					<label for="city">City</label>
-					<span class="contact-spans"><input type="text" id="city" name="user_city"></span>
-				</div>
+					<input type="text" id="city" name="user_city">
 
-				<div class="contact">
+
 					<label for="state">State</label>
-					<span class="contact-spans"><select class="state-choice" id="state" name="user_state"></span>
+					<select class="state-choice" id="state" name="user_state">
 					<option>Choose State</option>
 					<option value="AL">Alabama</option>
 					<option value="AK">Alaska</option>
@@ -119,14 +114,13 @@
 					<option value="WI">Wisconsin</option>
 					<option value="WY">Wyoming</option>
 					</select>
-				</div>
 
-				<div class="contact">
+
+
 					<label for="zip">Zip Code</label>
-					<span class="zip-code">
+
 						<input type="text" id="zip" name="user_zip">
-					</span>
-				</div>
+
 			</div>
 		</fieldset>
 
@@ -137,7 +131,7 @@
 			<!-- checkboxes under newsletter section of the page -->
 			<div class="line3"></div>
 			<div class="second-section">
-				<h3 class="legend2">Newsletter</h3>
+				<legend><span class="legend bottomone">Newsletter</span></legend>
 				<p class="recieve">Select the newsletter you would like to recieve</p>
 				<div class="container">
 					<input type="checkbox" id="html-newsletter" value="interest_html" name="user_interests"><label class="html-newsletter" for="html-newsletter">HTML News</label><br>

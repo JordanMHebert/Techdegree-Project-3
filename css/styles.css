@@ -30,11 +30,12 @@ fieldset {
  ======================================== */
 h1 {
   margin: 0;
-  padding-top: 20px;
+  padding-top: 15px;
   background: #2D3945;
   font-size: 1.5em;
   color: white;
   text-align: center;
+  padding-bottom: 15px;
 }
 
 h2 {
@@ -70,13 +71,18 @@ p {
    contact information section of form
  ======================================== */
 legend {
-  font-size: 1.3em;
+  display: flex;
+  font-size: 1.5em;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 .legend {
-  margin-left: -100px;
+    font-size: .80em;
+  }
+
+.topone {
+  margin-left: -110px;
 }
 
 label {
@@ -87,8 +93,46 @@ label {
 }
 
 .contact-info {
+  display: flex;
+  flex-wrap: wrap;
   color: #d3d3d3;
 }
+
+label[for="name"],
+label[for="mail"],
+label[for="phone"],
+label[for="address"],
+label[for="city"],
+label[for="state"],
+label[for="zip"] {
+  width: 40%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  flex-grow: 1;
+  border-radius: 3.5px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+input[id="zip"]{
+  flex-grow: 1;
+  max-width: 61%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select[class="state-choice"]:focus,
+textarea[id="other-topics"]:focus {
+  background: #e0ffff;
+  color: #2f4f4f;
+
+}
+
 
 .state-choice {
   color: #2f4f4f;
@@ -107,38 +151,25 @@ input {
   font-style: italic;
 }
 
-.contact-spans {
-  display: flex;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
-  flex-basis: 100%;
-  border-radius: 3.5px;
-  height: 40px;
-  margin-bottom: 5px;
-}
-
 .zip-code {
   max-width: 50%;
   display: flex;
 }
 
 select[id="state"] {
-  flex-basis: 100%;
   border-radius: 3.5px;
   height: 40px;
   background-color: #EFF0F2;
   margin-bottom: 5px;
 }
 
+
+
 /*=======================================
    newsletter section of form
  ======================================== */
 .second-section {
   padding-top: 3px;
-  background-color: #e0ffff;
   padding-bottom: 5px;
 }
 
@@ -146,11 +177,6 @@ select[id="state"] {
   height: 1px;
   border-bottom: 2px solid black;
   margin-bottom: 10px;
-}
-
-.legend2 {
-  font-weight: bold;
-  text-align: left;
 }
 
 .bottom-topics,
@@ -245,7 +271,7 @@ button {
   .main-heading {
     margin-left: 180px;
     max-width: 50%;
-    background-color: white;
+    background-color: #b0e0e6;
   }
 
   .get-started {
@@ -272,9 +298,12 @@ button {
   /*=============================================================
     contact information section of form inside media quaries
  ============================================================== */
-  .legend {
-    margin-left: -250px;
-    font-size: .80em;
+  .topone {
+    margin-left: -200px;
+  }
+
+  .bottomone {
+    margin-left: 180px;
   }
 
   .contact-info,
@@ -283,13 +312,17 @@ button {
     margin-left: 180px;
   }
 
-  .contact {
-    display: flex;
-  }
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .contact-spans {
-    flex-grow: 1;
-  }
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+  flex-grow: 1;
+}
 
   form input, form select {
     max-width: 100%;
@@ -306,6 +339,10 @@ button {
     width: 40%;
   }
 
+  input[id="zip"]{
+    max-width: 30%;
+  }
+
   /*=============================================================
     newsletter section of form inside media quaries
  ============================================================== */
@@ -313,15 +350,13 @@ button {
     height: 1px;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
-    max-width: 50%;
-    margin-left: 180px;
+    max-width: 55%;
+    margin-left: 150px;
     margin-top: 10px;
   }
 
   .second-section {
-    margin-left: 15px;
-    margin-right: 15px;
-    background-color: white;
+  margin-right: 50px;
   }
 
   input[type="checkbox"],
