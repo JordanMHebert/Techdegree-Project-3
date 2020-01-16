@@ -78,11 +78,16 @@ legend {
 }
 
 .legend {
-    font-size: .80em;
-  }
+  font-size: .80em;
+}
 
 .topone {
   margin-left: -110px;
+}
+
+.bottomone {
+  margin-right: 200px;
+  margin-top: 5px;
 }
 
 label {
@@ -118,7 +123,7 @@ select {
   margin-bottom: 5px;
 }
 
-input[id="zip"]{
+input[id="zip"] {
   flex-grow: 1;
   max-width: 61%;
 }
@@ -130,9 +135,15 @@ select[class="state-choice"]:focus,
 textarea[id="other-topics"]:focus {
   background: #e0ffff;
   color: #2f4f4f;
-
 }
 
+textarea[id="other-topics"] {
+  margin-bottom: 15px;
+}
+
+.recieve {
+  margin-top: -5px;
+}
 
 .state-choice {
   color: #2f4f4f;
@@ -162,8 +173,6 @@ select[id="state"] {
   background-color: #EFF0F2;
   margin-bottom: 5px;
 }
-
-
 
 /*=======================================
    newsletter section of form
@@ -303,7 +312,7 @@ button {
   }
 
   .bottomone {
-    margin-left: 180px;
+    margin-right: 290px;
   }
 
   .contact-info,
@@ -312,17 +321,17 @@ button {
     margin-left: 180px;
   }
 
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-  flex-grow: 1;
-}
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    flex-grow: 1;
+  }
 
   form input, form select {
     max-width: 100%;
@@ -339,7 +348,7 @@ select {
     width: 40%;
   }
 
-  input[id="zip"]{
+  input[id="zip"] {
     max-width: 30%;
   }
 
@@ -350,13 +359,13 @@ select {
     height: 1px;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
-    max-width: 55%;
-    margin-left: 150px;
+    max-width: 52%;
+    margin-left: 170px;
     margin-top: 10px;
   }
 
   .second-section {
-  margin-right: 50px;
+    margin-right: 50px;
   }
 
   input[type="checkbox"],
