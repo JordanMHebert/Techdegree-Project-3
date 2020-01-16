@@ -107,7 +107,7 @@ input {
   font-style: italic;
 }
 
-.contact {
+.contact-spans {
   display: flex;
 }
 
@@ -281,8 +281,18 @@ form {
   margin-left: 180px;
 }
 
+.contact {
+  display: flex;
+}
 
+form input, form select {
+    max-width: 100%;
+    display: inline-block;
+}
 
+ form label {
+   width: 40%;
+ }
 /*=============================================================
     newsletter section of form inside media quaries
  ============================================================== */
