@@ -34,12 +34,13 @@
 
 		<!--fieldset for contact info section of the page  -->
 		<fieldset>
-			<legend align="left">Contact Information</legend>
+			<legend><span class="legend">Contact Information</span></legend>
 
 			<div class="contact-info">
 
+
 				<label for="name">Full Name</label>
-				<div class="contact">
+					<div class="contact">
 					<input type="text" id="name" name="user_name" placeholder="Required" required>
 				</div>
 
@@ -50,17 +51,17 @@
 
 				<label for="phone">Phone Number</label>
 				<div class="contact">
-					<input type="phone" id="phone" name="user_phone">
+					<input type="tel" id="phone" name="user_phone">
 				</div>
 
 				<label for="adress">Street Address</label>
 				<div class="contact">
-					<input type="address" id="adress" name="user_address">
+					<input type="text" id="adress" name="user_address">
 				</div>
 
 				<label for="city">City</label>
 				<div class="contact">
-					<input type="city" id="city" name="user_city">
+					<input type="text" id="city" name="user_city">
 				</div>
 
 				<label for="state">State</label>
@@ -122,7 +123,9 @@
 				</div>
 
 				<label for="zip">Zip Code</label>
-				<input type="zip" id="zip" name="user_zip">
+				<div class="zip-code">
+					<input type="text" id="zip" name="user_zip">
+				</div>
 			</div>
 		</fieldset>
 
@@ -133,16 +136,16 @@
 			<!-- checkboxes under newsletter section of the page -->
 			<div class="line3"></div>
 			<div class="second-section">
-				<label for="newsletter">Newsletter</label>
+				<label><span class="legend2">Newsletter</span></label>
 				<p class="recieve">Select the newsletter you would like to recieve</p>
 				<div class="container">
 					<input type="checkbox" id="html-newsletter" value="interest_html" name="user_interests"><label class="html-newsletter" for="html-newsletter">HTML News</label><br>
 					<input type="checkbox" id="css-newsletter" value="interest_css" name="user_interests"><label class="css-newsletter" for="css-newsletter">CSS News</label><br>
-					<input type="checkbox" id="javascript-newsletter" value="interest_javascript" name="user_interests"><label class="javascipt-newsletter" for="javascipt-newsletter">Javascript News</label><br>
+					<input type="checkbox" id="javascript-newsletter" value="interest_javascript" name="user_interests"><label class="javascipt-newsletter">Javascript News</label><br>
 				</div>
 
 				<!-- radio buttons under newsletter format section of the page  -->
-				<label for="format">Newsletter format</label>
+				<label><span class="format">Newsletter format</span></label>
 				<div class="container">
 					<input type="radio" id="html" value="html" name="user_choice"> <label for="html" class="html-radio">HTML</label> <br>
 					<input type="radio" id="plain_text" value="plain_text" name="user_choice"> <label for="plain_text" class="plain-text-radio">Plain text</label>
@@ -150,7 +153,7 @@
 			</div>
 
 			<!-- other topics text ares section of the page -->
-			<label for="other-topics">other topics you'd like to hear about</label>
+			<label for="other-topics"><span class="other-topics">other topics you'd like to hear about</span></label>
 			<div class=typehere>
 				<textarea id="other-topics" name="user_other-topics"></textarea>
 			</div>
