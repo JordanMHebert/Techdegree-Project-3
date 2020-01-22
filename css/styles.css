@@ -1,8 +1,13 @@
 /*=======================================
          base styles
 ======================================== */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Noto Sans', 'Roboto Condensed', sans-serif;
+  line-height: 1.6;
   text-align: center;
 }
 
@@ -10,11 +15,10 @@ body {
           main css
  ======================================== */
 form {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  max-width: 300px;
+  margin: 10px auto;
+  padding-top: 0;
+  border-radius: 8px;
 }
 
 fieldset {
@@ -26,82 +30,77 @@ fieldset {
  ======================================== */
 h1 {
   margin: 0;
-  padding-top: 1em;
+  padding-top: 15px;
   background: #2D3945;
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: white;
   text-align: center;
-  font-weight: bold;
-  padding-bottom: 1em;
+  padding-bottom: 15px;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 p {
   color: #778899;
   font-size: 1em;
-  margin-top: -5px;
 }
 
 .main-heading {
-  padding-top: .7em;
-  }
+  padding-top: 20px;
+  padding-bottom: 8px;
+  background-color: #b0e0e6;
+}
 
 .line1 {
-  flex-grow: 1;
-  flex-basis: 25em;
-  margin-top: 1em;
   height: 1px;
-  border-bottom: 5px solid black;
-
-
+  border-bottom: 4px solid black;
+  margin-bottom: 4px;
+  margin-top: 10px;
 }
 
 .line2 {
-  flex-grow: 1;
   height: 1px;
-  margin-top: 0.19em;
-  border-top: 2.5px solid black;
-  margin-bottom: 1.75em;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
 }
 
 /*=======================================
    contact information section of form
  ======================================== */
 legend {
-  /* display: flex; */
+  display: flex;
   font-size: 1.5em;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 .legend {
-    font-size: .80em;
-  }
+  font-size: .80em;
+}
 
 .topone {
-  margin-left: -85px;
-  font-weight: bold;
-  font-size: .92em;
-  margin-bottom: 8px;
+  margin-left: -110px;
 }
 
 .bottomone {
-margin-right: 200px;
-margin-top: 5px;
-margin-bottom: 17px;
+  margin-right: 200px;
+  margin-top: 5px;
+}
+
+label {
+  text-align: left;
+  margin-top: 5px;
+  display: block;
+  margin-bottom: 3px;
 }
 
 .contact-info {
   display: flex;
   flex-wrap: wrap;
   color: #d3d3d3;
-  margin: 0;
-  padding: 0;
-  width: 100%;
 }
 
 label[for="name"],
@@ -111,18 +110,8 @@ label[for="address"],
 label[for="city"],
 label[for="state"],
 label[for="zip"] {
-  width: 100%;
-  margin-top: 7px;
-  color: black;
-  text-align: left;
-  margin-top: 5px;
-  display: block;
-  margin-bottom: 15px;
-}
+  width: 40%;
 
-label[for="zip"] {
-margin-top: 20px;
-margin-right: 50px;
 }
 
 input[type="text"],
@@ -131,17 +120,18 @@ input[type="tel"],
 select {
   flex-grow: 1;
   border-radius: 3.5px;
-  height: 42px;
-  margin-bottom: 20px;
-  flex-basis: auto;
+  height: 40px;
+  margin-bottom: 15px;
 }
 
-select[class="state-choice"] {
-  flex-basis: 500px;
+input[id="zip"] {
+  flex-grow: 1;
+  max-width: 61%;
+  margin-top: 5px;
 }
 
-input[id="zip"]{
-  max-width: 45%;
+label[for="zip"] {
+  margin-top: 15px;
 }
 
 input[type="text"]:focus,
@@ -153,8 +143,9 @@ textarea[id="other-topics"]:focus {
   color: #2f4f4f;
 }
 
-textarea[id="other-topics"]{
+textarea[id="other-topics"] {
   margin-bottom: 15px;
+  margin-left: -12px;
 }
 
 .recieve {
@@ -190,8 +181,6 @@ select[id="state"] {
   margin-bottom: 5px;
 }
 
-
-
 /*=======================================
    newsletter section of form
  ======================================== */
@@ -201,65 +190,57 @@ select[id="state"] {
 }
 
 .line3 {
-  flex-grow: 1;
   height: 1px;
   border-bottom: 2px solid black;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
 }
 
-
+.bottom-topics,
 .bottom-news {
   text-align: left;
-  margin-left: 6px;
-  margin-top: 10px;
-  margin-bottom: 18px;
-}
-
-label[for="other-topics"] {
-margin-left: -40px;
-}
-
-label[class="plain-text-radio"] {
-  margin-bottom: 20px;
 }
 
 .recieve {
   text-align: left;
-  margin-left: 6px;
 }
 
-input[type="checkbox"],
-input[type="radio"]{
-  flex: 1;
-  margin-left: -270px;
-  margin-bottom: -100px;
+label[for="newsletter"] {
+  font-weight: bold;
+  font-size: 1.1em;
 }
 
-label[class="html-newsletter" ],
-label[class="css-newsletter"],
-label[class="javascipt-newsletter"],
-label[class="html-radio"],
-label[class="plain-text-radio"] {
-  flex: 2;
-  margin-left: 35px;
-  margin-top: -18px;
-  text-align: left;
-  display: block;
+label[for="format"],
+label[for="other-topics"] {
+  color: #778899;
+  font-size: 1em;
+  padding-bottom: 5px;
 }
 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.html-newsletter,
+.css-newsletter,
+.javascipt-newsletter,
+.html-radio,
+.plain-text-radio {
+  flex-basis: 90%;
+  margin-top: -5px;
+  margin-left: 12px;
+  color: #778899;
+}
 
 .typehere {
-  /* display: flex; */
+  display: flex;
 }
 
 textarea {
-  flex-grow: 1;
+  flex-basis: 100%;
   border-radius: 3px;
   height: 6.25em;
   background-color: #EFF0F2;
-  margin-top: 20px;
-  width: 105%;
-  margin-left: -12.5px;
 }
 
 /*=======================================
@@ -273,8 +254,8 @@ button {
   text-align: center;
   font-style: normal;
   border-radius: 5px;
-  width: 100%;
-  margin-bottom: 15px;
+  width: 96%;
+  margin-bottom: 5px;
 }
 
 /*=======================================
@@ -338,26 +319,30 @@ button {
   }
 
   .bottomone {
-    margin-right: 290px;
+    margin-right: 320px;
   }
 
-  .contact-info,
+  .contact-info{
+    max-width: 50%;
+    margin-left: 164px;
+  }
+
   .container {
     max-width: 50%;
-    margin-left: 180px;
+    margin-left: 164px;
   }
 
-.contact-info {
-  display: flex;
-  flex-wrap: wrap;
-}
+  .contact-info {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-select {
-  flex-grow: 1;
-}
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    flex-grow: 1;
+  }
 
   form input, form select {
     max-width: 100%;
@@ -374,7 +359,7 @@ select {
     width: 40%;
   }
 
-  input[id="zip"]{
+  input[id="zip"] {
     max-width: 30%;
   }
 
@@ -385,18 +370,26 @@ select {
     height: 1px;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
-    max-width: 52%;
-    margin-left: 170px;
+    max-width: 50%;
+    margin-left: 177px;
     margin-top: 10px;
   }
 
   .second-section {
-  margin-right: 50px;
+    margin-right: 50px;
   }
 
   input[type="checkbox"],
   input[type="radio"] {
     margin-left: -1.1px;
+  }
+
+  .html-newsletter,
+  .css-newsletter,
+  .javascipt-newsletter,
+  .html-radio,
+  .plain-text-radio{
+
   }
 
   .legend2 {
@@ -405,13 +398,12 @@ select {
     font-size: 1.2em;
   }
 
-  .recieve,
-  .format {
-    margin-left: 180px;
+  .recieve{
+  margin-left: 162px;
   }
 
   .bottom-news {
-    margin-left: 180px;
+    margin-left: 162px;
     text-align: left;
   }
 
@@ -420,12 +412,29 @@ select {
     margin-left: 180px;
   }
 
+  label[for="other-topics"]{
+    margin-left: 162px;
+  }
+
   textarea {
-    max-width: 55%;
-    margin-left: 170px;
+    max-width: 72%;
+  }
+
+  .typehere {
+    margin-left: 175px;
   }
 
   button {
-    max-width: 53%;
+    max-width: 53.5%;
+    margin-left: -10px;
   }
+
+  .copyright {
+    margin-left: -10px;
+  }
+
+  @media (min-width:768px) {
+
+
+
 }
