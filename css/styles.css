@@ -111,7 +111,6 @@ label[for="city"],
 label[for="state"],
 label[for="zip"] {
   width: 40%;
-
 }
 
 input[type="text"],
@@ -276,7 +275,7 @@ button {
       top section of form inside media quaries
    ============================================== */
   form {
-    max-width: 768px;
+    max-width: 792px;
   }
 
   .name {
@@ -322,7 +321,7 @@ button {
     margin-right: 320px;
   }
 
-  .contact-info{
+  .contact-info {
     max-width: 50%;
     margin-left: 164px;
   }
@@ -384,22 +383,14 @@ button {
     margin-left: -1.1px;
   }
 
-  .html-newsletter,
-  .css-newsletter,
-  .javascipt-newsletter,
-  .html-radio,
-  .plain-text-radio{
-
-  }
-
   .legend2 {
     text-align: left;
     margin-left: 180px;
     font-size: 1.2em;
   }
 
-  .recieve{
-  margin-left: 162px;
+  .recieve {
+    margin-left: 162px;
   }
 
   .bottom-news {
@@ -412,7 +403,7 @@ button {
     margin-left: 180px;
   }
 
-  label[for="other-topics"]{
+  label[for="other-topics"] {
     margin-left: 162px;
   }
 
@@ -432,9 +423,4 @@ button {
   .copyright {
     margin-left: -10px;
   }
-
-  @media (min-width:768px) {
-
-
-
 }
