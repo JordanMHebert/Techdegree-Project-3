@@ -378,11 +378,6 @@ button {
     margin-right: 50px;
   }
 
-  input[type="checkbox"],
-  input[type="radio"] {
-    margin-left: -1.1px;
-  }
-
   .legend2 {
     text-align: left;
     margin-left: 180px;
